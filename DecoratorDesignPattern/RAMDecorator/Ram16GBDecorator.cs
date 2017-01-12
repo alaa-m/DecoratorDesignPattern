@@ -8,31 +8,25 @@ using DecoratorDesignPattern.Component;
 
 namespace DecoratorDesignPattern.ConcreteDecorator
 {
-    public class Ram8GBDecorator : RamDecorator
+    public class Ram16GBDecorator : BaseDecorator
     {
-        public override string Name
+
+        public Ram16GBDecorator(Computer computer) : base(computer)
         {
-            get
-            {
-                return base.Name;
-            }
         }
 
         public override string Model
         {
             get
             {
-                return base.Model + " 8GB RAM";
+                return base.Model + " 16GB RAM" ;
             }
         }
 
-        public Ram8GBDecorator(Computer computer) : base(computer)
-        {
-        }
 
         public override double ComputePrice()
         {
-            return 49.0 + base.ComputePrice();
+            return 79.0 + base.ComputePrice();
         }
     }
 }

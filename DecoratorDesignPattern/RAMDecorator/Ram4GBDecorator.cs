@@ -8,16 +8,8 @@ using System.Threading.Tasks;
 
 namespace DecoratorDesignPattern.ConcreteDecorator
 {
-    public class Ram4GBDecorator : RamDecorator
+    public class Ram4GBDecorator : BaseDecorator
     {
-
-        public override string Name
-        {
-            get
-            {
-                return base.Name;
-            }
-        }
 
         public override string Model
         {

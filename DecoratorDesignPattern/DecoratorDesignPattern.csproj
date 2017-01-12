@@ -47,10 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Component\Computer.cs" />
-    <Compile Include="ConcreteComponent\LenovoB560.cs" />
-    <Compile Include="ConcreteDecorator\Ram16GBDecorator.cs" />
-    <Compile Include="ConcreteDecorator\Ram4GBDecorator.cs" />
-    <Compile Include="ConcreteDecorator\Ram8GBDecorator.cs" />
+    <Compile Include="BaseComponent\LenovoB560.cs" />
+    <Compile Include="HDDDecorator\HDD128SSDDecorator.cs" />
+    <Compile Include="HDDDecorator\HDD256SSDDecorator.cs" />
+    <Compile Include="HDDDecorator\HDD500SATADecorator.cs" />
+    <Compile Include="RAMDecorator\Ram16GBDecorator.cs" />
+    <Compile Include="RAMDecorator\Ram4GBDecorator.cs" />
+    <Compile Include="RAMDecorator\Ram8GBDecorator.cs" />
     <Compile Include="Decotrator\RamDecorator.cs" />
     <Compile Include="MainFrm.cs">
       <SubType>Form</SubType>

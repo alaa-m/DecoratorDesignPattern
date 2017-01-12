@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace DecoratorDesignPattern.Decotrator
 {
-    public class RamDecorator : Computer
+    public class BaseDecorator : Computer
     {
         protected Computer _computer;
-        public  RamDecorator (Computer computer)
+        public  BaseDecorator (Computer computer)
         {
             _computer = computer;
         }

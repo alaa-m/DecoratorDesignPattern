@@ -1,6 +1,7 @@
 ﻿using DecoratorDesignPattern.Component;
 using DecoratorDesignPattern.ConcreteComponent;
 using DecoratorDesignPattern.ConcreteDecorator;
+using DecoratorDesignPattern.HDDDecorator;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,6 +37,19 @@ namespace DecoratorDesignPattern
             else
             {
                 lenovob560 = new Ram4GBDecorator(lenovob560);
+            }
+
+            if (HDD128SSDOption.Checked)
+            {
+                lenovob560 = new HDD128SSDDecorator(lenovob560);
+            }
+            else if (HDD256SSDOption.Checked)
+            {
+                lenovob560 = new HDD256SSDDecorator(lenovob560);
+            }
+            else
+            {
+                lenovob560 = new HDD500SATADecorator(lenovob560);
             }
 
             mdlLbl.Text = lenovob560.FullName;
